@@ -1,20 +1,17 @@
 #include "main.h"
-
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+ * main - prints the string "_putchar" from a character array.
+ * Return: 0 on success.
  */
 int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
+	char c[] = "_putchar";
+	int i;
 
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(c[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
